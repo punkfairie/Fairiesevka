@@ -1,0 +1,13 @@
+# Maintainer: Marley Rae <marley@punkfairie.net>
+
+pkgname=ttf-fairiesevka
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='My personal flavor of the Iosevka font'
+arch=('any')
+url='https://github.com/punkfairie/Fairiesevka'
+license=('custom:SIL Open Font License v1.1')
+
+source=(
+
+  )

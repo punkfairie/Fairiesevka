@@ -10,9 +10,8 @@ url='https://github.com/punkfairie/Fairiesevka'
 license=(OFL)
 provides=('ttf-font-nerd')
 
-source=(
-  
-)
+source=(${url}/releases/download/v${pkgver}/Fairiesevka.zip)
+sha256sums=('50248015c1c7eda62573b45e874dae8dc5830c0b74346a1557fd7dca2e12e5ee')
 
 package_ttf-fairiesevka() {
   pkgdesc+='.'

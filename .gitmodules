@@ -1,3 +1,6 @@
 [submodule "Iosevka"]
 	path = Iosevka
 	url = git@github.com:be5invis/Iosevka.git
+[submodule "pkg"]
+	path = pkg
+	url = ssh://aur@aur.archlinux.org/fairiesevka-font.git

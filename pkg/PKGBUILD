@@ -1,13 +1,33 @@
 # Maintainer: Marley Rae <marley@punkfairie.net>
 
-pkgname=ttf-fairiesevka
+pkgname=(ttf-fairiesevka ttf-fairiesevka-term ttf-fairiesevka-propo)
+pkgbase=fairiesevka-font
 pkgver=1.0.0
 pkgrel=1
-pkgdesc='My personal flavor of the Iosevka font'
+pkgdesc='My personal flavor of the Iosevka font; patched with Nerd Font glyphs'
 arch=('any')
 url='https://github.com/punkfairie/Fairiesevka'
-license=('custom:SIL Open Font License v1.1')
+license=(OFL)
+provides=('ttf-font-nerd')
 
 source=(
+  
+)
 
-  )
+package_ttf-fairiesevka() {
+  pkgdesc+='.'
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE.md
+  install -Dm644 -t "$pkgdir/usr/share/fonts/fairiesevka" reg/*.ttf
+}
+
+package_ttf-fairiesevka-term() {
+  pkgdesc+=' (single-width/mono variant).'
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE.md
+  install -Dm644 -t "$pkgdir/usr/share/fonts/fairiesevka" term/*.ttf
+}
+
+package_ttf-fairiesevka-propo() {
+  pkgdesc+=' (variable-width/propo variant).'
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE.md
+  install -Dm644 -t "$pkgdir/usr/share/fonts/fairiesevka" propo/*.ttf
+}

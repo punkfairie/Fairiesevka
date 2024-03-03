@@ -1,4 +1,4 @@
-# Maintainer: Marley Rae <marley@punkfairie.net>
+# Maintainer: Marley Rae <marley at punkfairie dot net>
 
 pkgname=(ttf-fairiesevka ttf-fairiesevka-term ttf-fairiesevka-propo)
 pkgbase=fairiesevka-font
